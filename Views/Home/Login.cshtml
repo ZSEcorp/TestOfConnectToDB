@@ -1,0 +1,12 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="text-center">
+    <form asp-page-handler="Login" method="post">
+        Login: <input asp-for="Login"><br>
+        Password: <input asp-for="Pass"><br>
+        <button type="submit">Zaloguj się</button>
+    </form>
+</div>
